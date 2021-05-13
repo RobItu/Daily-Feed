@@ -10,3 +10,10 @@ EPH=-106.2005
 observation=mgr.weather_at_coords(EPL,EPH).weather
 temperature=observation.temperature('fahrenheit')
 print(temperature)
+question1=input('Would you like to know a useful tip?\n' + 'Type y/n\n')
+if question1=='y':
+    print('test1')
+elif question1=='n':
+    print('test2')
+else:
+    print('test 3')
