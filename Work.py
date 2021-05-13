@@ -1,8 +1,10 @@
 from pyowm.owm import OWM
 import pyowm
 
-owm=pyowm.OWM('c5d07c67db6d86d9b0dcfd63fc9952bb')
-obs=owm.weather_manager().weather_at_place('London, GB')
+owm = OWM('c5d07c67db6d86d9b0dcfd63fc9952bb')
+mgr=owm.weather_manager()
+observation=mgr.weather_at_place('London,GB').weather
+temp_dict_kelvin=observation.temperature('fahrenheit')
+print(temp_dict_kelvin)
 
-print(w)
 
