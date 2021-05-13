@@ -14,10 +14,11 @@ temperature=observation.temperature('fahrenheit')
 print(temperature)
 #==========================================================================================================
 #Livin' Off the Land
+wisdomlist = []
 question1=input('Would you like to know a useful tip?\n' + 'Type y/n\n')
 if question1=='y':
     print('test1')
 elif question1=='n':
-    print('test2')
+    print('Have a good day!')
 else:
-    print('test 3')
+    print(str(question1) + ' is not recognized. \n' + 'Please type y/n')
